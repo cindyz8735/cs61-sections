@@ -31,3 +31,6 @@ int main(int argc, char* argv[]) {
 
     delete[] qsi.array;
 }
+
+// ascending takes most steps for insertion
+// 

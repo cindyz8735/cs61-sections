@@ -22,10 +22,13 @@ int main() {
 
     char* ptr_local_ch = &local_ch;
     uintptr_t addr_local_chr = (uintptr_t) ptr_local_ch;
+    printf("size of local_ch is: %zu\n", sizeof(local_ch));
     printf("addr of local_ch is: %p\n", addr_local_chr);
 
+    printf("size of allocated_ch is %zu\n", sizeof(*allocated_ch));
     printf("addr of allocated_ch is: %p\n", allocated_ch);
 
+    printf("size of allocated_ch pointer is: %zu\n", sizeof(&allocated_ch));
     printf("addr of allocated_ch pointer is: %p\n", &allocated_ch);
 
 }
